@@ -1,20 +1,47 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-button shape = "round" style="--background:black" >Entrar como Lojista</ion-button>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
 
-<ion-content color="primary">
-  <ion-card color="tertiary">
-    <ion-card-header>
-      <img alt="Corinthians Bicampeao mundial" src="C:\Users\Unicv\Desktop\ionic\omni\src\assets\img\icone.png" />
-      <ion-item>
-        <ion-input color="tertiary" fill="solid" type="email" placeholder="Email"></ion-input>
-      </ion-item>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Here's a small text description for the card content. Nothing more, nothing less.
-    </ion-card-content>
+  <ion-header>
+    <ion-toolbar color="primary" style="text-align: right;">
+      <ion-button shape="round" style="--background:black">Entrar como Lojista</ion-button>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-card
+    style="height: 100%; display: flex; align-items: center; justify-content: center; --background:rgb(255, 255, 255);">
+    <ion-card color="secondary">
+
+      <ion-row>
+        <ion-col style="text-align: center;">
+          <p style="width:400px;"></p>
+          <img src="assets/img/icone.png" height='60' width='160'>
+        </ion-col>
+      </ion-row>
+
+      <ion-card-header>
+        <ion-item>
+          <ion-input label="EMAIL" type="email" placeholder=""></ion-input>
+        </ion-item>
+        <p style="width:400px;"></p>
+        <ion-item>
+          <ion-input label="CNPJ" type="number" placeholder=""></ion-input>
+        </ion-item>
+        <p style="width:900px;"></p>
+        <ion-item>
+          <ion-input label="SENHA" type="password" value=""></ion-input>
+        </ion-item>
+      </ion-card-header>
+      <p style="width:900px;"></p>
+
+      <ion-card-content>
+        <ion-row>
+          <ion-col style="text-align: center;">
+            <ion-button shape="round" style="--background:black">ENTRAR</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
   </ion-card>
+
+
 </ion-content>
