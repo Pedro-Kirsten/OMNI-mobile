@@ -18,9 +18,18 @@
         </ion-col>
       </ion-row>
 
+      <ion-input
+      aria-label="Custom input"
+      placeholder="Custom input"
+      class="custom"
+      helperText="Helper text"
+      [counter]="true"
+      [maxlength]="20"
+    ></ion-input>
+
       <ion-card-header>
         <ion-item>
-          <ion-input label="EMAIL" type="email" placeholder=""></ion-input>
+          <ion-input label="E-mail" type="email" placeholder=""></ion-input>
         </ion-item>
         <p style="width:400px;"></p>
         <ion-item>
@@ -28,7 +37,7 @@
         </ion-item>
         <p style="width:900px;"></p>
         <ion-item>
-          <ion-input label="SENHA" type="password" value=""></ion-input>
+          <ion-input label="Senha" type="password" value=""></ion-input>
         </ion-item>
       </ion-card-header>
       <p style="width:900px;"></p>
@@ -36,7 +45,7 @@
       <ion-card-content>
         <ion-row>
           <ion-col style="text-align: center;">
-            <ion-button shape="round" style="--background:black">ENTRAR</ion-button>
+            <ion-button shape="round" style="--background:black">Entrar</ion-button>
           </ion-col>
         </ion-row>
       </ion-card-content>
