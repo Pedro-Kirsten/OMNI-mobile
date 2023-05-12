@@ -26,14 +26,36 @@
   text-decoration: none;
 }
 
-ion-input{
-  border-radius: 10px !important;
-  padding-right: 30px;
-  font-size: 0.9em;
-  border: 1px solid #f1f1f1 !important;
-  --background: rgb(219,219,219) !important;
-  /* height: 10%; */
-  /* width: 41%; */
-  max-width: 50vw; // this is applying perfectly
-  max-height: 10vh;
+.input-field {
+  background: rgb(66, 66, 66);
+  border: solid 0px rgb(88, 88, 88);
+  margin-bottom: 16px;
+  height: 50px;
+  border-radius: 20px;
+  padding-left: 16px;
+}
+
+.ion-content-home{
+  --ion-background-color:rgb(255, 255, 255);
+}
+.ion-search-home{
+  background-color: white !important;
+
+}
+ion-toolbar {
+  --background: #353535;
+  --color: white;
+
+  --min-height: 80px;
+  --padding-top: 20px;
+  --padding-bottom: 20px;
+}
+ion-searchbar.custom {
+  --background: #d3d3d3;
+  --color: #fff;
+  --placeholder-color: #fff;
+  --icon-color: #fff;
+  --clear-button-color: #fff;
+  
+  --border-radius: 15px;
 }

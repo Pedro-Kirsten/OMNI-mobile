@@ -1,11 +1,5 @@
 <ion-content>
 
-  <ion-header>
-    <ion-toolbar color="primary" style="text-align: right;">
-      <ion-button shape="round" style="--background:black">Entrar como Lojista</ion-button>
-    </ion-toolbar>
-  </ion-header>
-
 
   <ion-card
     style="height: 100%; display: flex; align-items: center; justify-content: center; --background:rgb(255, 255, 255);">
@@ -15,30 +9,19 @@
         <ion-col style="text-align: center;">
           <p style="width:400px;"></p>
           <img src="assets/img/icone.png" height='60' width='160'>
+          <p style="width:900px;"></p>
         </ion-col>
       </ion-row>
 
-      <ion-input
-      aria-label="Custom input"
-      placeholder="Custom input"
-      class="custom"
-      helperText="Helper text"
-      [counter]="true"
-      [maxlength]="20"
-    ></ion-input>
 
       <ion-card-header>
-        <ion-item>
-          <ion-input label="E-mail" type="email" placeholder=""></ion-input>
-        </ion-item>
-        <p style="width:400px;"></p>
-        <ion-item>
-          <ion-input label="CNPJ" type="number" placeholder=""></ion-input>
-        </ion-item>
+
+          <ion-input class = "input-field" label="    CPF ou CNPJ" type="number" placeholder=""></ion-input>
+
         <p style="width:900px;"></p>
-        <ion-item>
-          <ion-input label="Senha" type="password" value=""></ion-input>
-        </ion-item>
+
+          <ion-input class = "input-field" label="    Senha" type="password" value=""></ion-input>
+          
       </ion-card-header>
       <p style="width:900px;"></p>
 
