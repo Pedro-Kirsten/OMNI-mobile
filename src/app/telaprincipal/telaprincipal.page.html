@@ -12,9 +12,44 @@
       </ion-row>
     
     </ion-toolbar>
-</ion-header>
-
+  </ion-header>
+  
 <ion-content [fullscreen]="true">
+  <ion-row class="wrapper">
+    
+    <ion-col class="ion-activatable ripple-parent circle">
+      </ion-col>
+
+    <ion-col class="ion-activatable ripple-parent circle">
+    </ion-col>
+
+    <ion-col class="ion-activatable ripple-parent circle">
+    </ion-col>
+
+    <ion-col class="ion-activatable ripple-parent circle">
+    </ion-col>
+
+    <ion-col class="ion-activatable ripple-parent circle">
+    </ion-col>
+
+    <ion-col class="ion-activatable ripple-parent circle">
+    </ion-col>
+
+    <ion-col class="ion-activatable ripple-parent circle">
+    </ion-col>
+
+  </ion-row>
+
+<ion-row class="linha"> _</ion-row>
+
+<div class="ofertas" style="padding-top: 5px;">
+  <ion-col class="ion-align-items-center">
+    Ofertas
+  </ion-col>
+</div>
+
+  <br>
+
     <ion-row>
       <ion-col size="6" *ngFor="let produto of produtos; let ix = index" [hidden]="!produto.visibled" (click)="goProduto(produto)">
         <ion-row>
