@@ -1,0 +1,46 @@
+<ion-content class="loginPage" scroll="false">
+<ion-row class="ion-text-end account-icon">
+  <ion-col>
+    <ion-button class="botao_gerente" shape="round" color="dark"> Entrar como Lojista </ion-button>
+  </ion-col>
+</ion-row>
+
+  <ion-grid>
+    <ion-row justify-context-center align-items-center>
+      <ion-grid class="login-container">
+        <ion-row align-items-center>
+          <ion-col>
+            <img src="assets/img/icone.png" width="200px" height="75'px" class="logo">
+          </ion-col>
+        </ion-row>
+  
+        <ion-row>
+          <ion-col>
+
+            <br>
+           <ion-input [(ngModel)]="cliente.cpf" style="font-family: Inter;" label="Login (CPF)" shape="round" labelPlacement="floating" type="number"></ion-input> 
+            <br>
+           <ion-input [(ngModel)]="cliente.senha" style="font-family: Inter;" label="Senha" shape="round" labelPlacement="floating" type="password"></ion-input>
+            <br>
+            <br>
+           <ion-button size="medium" class="entrar" shape="round" color="dark"> Entrar </ion-button>
+            
+           </ion-col>
+         </ion-row>
+      </ion-grid>
+    </ion-row>
+  </ion-grid>
+
+  <ion-row class="cadastro">
+    <ion-col>
+      <a routerLink> Cadastre-se! </a>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="senha">
+    <ion-col>
+      Esqueceu a senha? 
+    </ion-col>
+  </ion-row>
+
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "OMNI-mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
