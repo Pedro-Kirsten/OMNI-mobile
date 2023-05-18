@@ -16,7 +16,7 @@ ion-content{
 
 .card-produto{
   background-color: rgb(251, 251, 251);
-  padding: 15px 10px;
+  padding: 30px 10px;
   border-radius: 8px;
   -webkit-box-shadow: -0.5px 0.5px 4px 0px rgba(121, 121, 121, 0.75);
   -moz-box-shadow: -0.5px 0.5px 4px 0px rgba(121, 121, 121, 0.75);
@@ -122,4 +122,10 @@ b {
   font-weight: bold;
   text-align: center;
   font-size: 20px;
+}
+
+ion-fab-button {
+  --background: #41b4e9;
+  --box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --color: rgb(255, 255, 255);
 }

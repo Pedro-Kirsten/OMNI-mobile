@@ -53,8 +53,8 @@
     <ion-row>
       <ion-col size="6" *ngFor="let produto of produtos; let ix = index" [hidden]="!produto.visibled" (click)="goProduto(produto)">
         <ion-row>
-          <ion-col size="12" class="card-produto">
-            
+          <ion-col class="card-produto">
+                        
             <ion-row>
               <ion-col size="12" class="img-produto ">
                 <img [src]="pathImgs + produto.imagens[0]"/>
@@ -83,7 +83,11 @@
         </ion-row>
       </ion-col>
     </ion-row>
+
+</ion-content>
   
-  </ion-content>
-  
-  
+  <ion-fab vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="cart"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>  
