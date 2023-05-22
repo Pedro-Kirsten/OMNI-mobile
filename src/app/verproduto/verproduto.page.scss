@@ -1,0 +1,67 @@
+ion-toolbar{
+    --background: #ffffff;
+    --color: white;  
+    --min-height: 60px;
+    --font-family: Inter;
+    --text-align: center;
+}
+
+
+.valor{
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+}
+
+.footer{
+    background-color: #252525;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.qntd-style{
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    text-align: center;
+}
+
+.descricao{
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+}
+
+.nome {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-family: Inter; 
+    height: 40px;
+}
+
+.preco {
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    font-family: Inter; 
+    font-weight: bold;
+}
+
+ion-button {
+   --background: #4a4a4a;
+}
+
+.carrinho{
+    margin-left: 50px;
+    font-family: Inter;
+    font-size: 20px;
+    height: 45px;
+}
+
+ion-accordion-group {
+    width:100%;
+    margin-top: 10px;
+}
+

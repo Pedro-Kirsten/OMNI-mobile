@@ -24,7 +24,11 @@
       <ion-grid class="login-container">
         <ion-row class="align-items-center">
           <ion-col>
-            <img src="assets/icon/favicon.png" width="100px" height="100px"style="margin-left: 140px;">
+
+            <ion-avatar>
+              <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg">
+            </ion-avatar>
+
           </ion-col>
         </ion-row>
   
@@ -50,9 +54,9 @@
            <ion-input [(ngModel)]="cadastro.numero" label="Nº" shape="round" labelPlacement="floating" type="text" style="margin-bottom: 5px;"></ion-input>
            
           
-         <ion-button size="medium" class="cancelar" shape="round" color="danger"> Cancelar </ion-button>
+         <ion-button size="6" class="cancelar" shape="round" color="danger"> Cancelar </ion-button>
            
-         <ion-button size="medium" class="salvar" shape="round"> Salvar </ion-button>
+         <ion-button size="6" class="salvar" shape="round"> Salvar </ion-button>
 
            </ion-col>
          </ion-row>
