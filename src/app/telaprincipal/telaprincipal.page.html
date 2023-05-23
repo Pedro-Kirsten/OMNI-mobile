@@ -1,20 +1,40 @@
-<ion-header>
-    <ion-toolbar>
-  
-      <ion-row class="ion-align-items-start header-line">
-        <ion-col size="1" class="menu-icon">
-          <ion-icon color="dark" name="reorder-three-outline" style="padding-top: 6px" size="large"></ion-icon>
-        </ion-col>
+<ion-menu contentId="main-content">
 
-        <ion-col>
-            <ion-searchbar size="11" color="dark" shape="round" animated="true" placeholder="Buscar loja e produtos"></ion-searchbar>
-        </ion-col>
-      </ion-row>
-    
+  <ion-header>
+    <ion-toolbar>
+      <ion-title color="dark">Menu Content</ion-title>
     </ion-toolbar>
   </ion-header>
-  
-<ion-content [fullscreen]="true">
+  <ion-content color="dark" class="ion-padding">This is the menu content.</ion-content>
+</ion-menu>
+
+<ion-header>
+
+  <ion-toolbar>
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-row>
+
+        <ion-col size="1">
+          <ion-buttons>
+            <ion-menu-button color="dark"></ion-menu-button>
+          </ion-buttons>
+        </ion-col>
+
+        <ion-col size="11">
+            <ion-searchbar color="dark" shape="round" animated="true" placeholder="Buscar loja e produtos"></ion-searchbar>
+        </ion-col>
+
+          </ion-row>
+        </ion-toolbar>
+      </ion-header>
+    </div>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="ion-padding">
   <ion-row class="wrapper">
     
     <ion-col class="ion-activatable ripple-parent circle">
@@ -83,9 +103,8 @@
         </ion-row>
       </ion-col>
     </ion-row>
+  </ion-content>
 
-</ion-content>
-  
   <ion-fab vertical="bottom" horizontal="end">
     <ion-fab-button>
       <ion-icon name="cart"></ion-icon>
