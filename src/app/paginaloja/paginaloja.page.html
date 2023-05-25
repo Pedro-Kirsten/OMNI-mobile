@@ -1,29 +1,11 @@
 <ion-menu contentId="main-content">
 
-  
-  <ion-row class="cor">
-
-  </ion-row>
-
-  <ion-row class="avatar">
-    <ion-col>
-
-      <ion-avatar>
-        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg">
-      </ion-avatar>
-
-    </ion-col>
-  </ion-row>
-
-  <ion-content class="ion-padding">
-   <p class="nome"> Olá, Nome </p>
-
-    <br>
-
-   <p class="menu"> Perfil </p>
-
-   <p class="menu"> Meus Pedidos </p>
-  </ion-content>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title color="dark">Menu Content</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content color="dark" class="ion-padding">This is the menu content.</ion-content>
 </ion-menu>
 
 <ion-header>
@@ -53,30 +35,14 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  <ion-row class="wrapper">
-    
-<!-- Talvez funcione se utilizar o evento de click() só que dai teria de fazer filtrar os produtos da categoria 1-->
-    <ion-col class="ion-activatable ripple-parent circle">
-      </ion-col>
-
-    <ion-col class="ion-activatable ripple-parent circle">
+  <ion-row class="loja">
+    <ion-col size="5">
+      <img src="/assets/icon/favicon.png">
     </ion-col>
 
-    <ion-col class="ion-activatable ripple-parent circle">
+    <ion-col size="7" class="nomeloja">
+      <p> Loja Oficial NomeLoja ✰✰✰✰✰ </p>
     </ion-col>
-
-    <ion-col class="ion-activatable ripple-parent circle">
-    </ion-col>
-
-    <ion-col class="ion-activatable ripple-parent circle">
-    </ion-col>
-
-    <ion-col class="ion-activatable ripple-parent circle">
-    </ion-col>
-
-    <ion-col class="ion-activatable ripple-parent circle">
-    </ion-col>
-
   </ion-row>
 
 <ion-row class="linha"> _</ion-row>
@@ -85,7 +51,7 @@
 
 <div class="ofertas">
   <ion-col class="ion-align-items-center">
-    Ofertas
+    Ofertas NomeLoja
   </ion-col>
 </div>
 
@@ -102,7 +68,7 @@
               </ion-col>
             </ion-row>
   
-            <ion-row style="height: 45px;">
+            <ion-row style="height: 45px;" color="dark">
               <ion-col size="12" class="titulo">
                 {{produto.nome}}
               </ion-col>
@@ -114,20 +80,8 @@
               </ion-col>
             </ion-row>
   
-            <ion-row>
-              <ion-col size="12" class="detalhe">
-                <span class="botao-detalhes"> Detalhes </span>
-              </ion-col>
-            </ion-row>
-  
           </ion-col>
         </ion-row>
       </ion-col>
     </ion-row>
   </ion-content>
-
-  <ion-fab vertical="bottom" horizontal="end">
-    <ion-fab-button>
-      <ion-icon name="cart"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>  
