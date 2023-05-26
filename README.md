@@ -1,1 +1,1 @@
-# Heroku API: [https://poppy-apirest.herokuapp.com/swagger-ui.html]
+# Heroku API: https://api-omni.herokuapp.com/swagger-ui.html
