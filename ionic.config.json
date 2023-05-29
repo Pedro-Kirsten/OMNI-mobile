@@ -1,0 +1,7 @@
+{
+  "name": "OMNI-gerente",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
