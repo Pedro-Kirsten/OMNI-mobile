@@ -1,0 +1,134 @@
+ion-content{
+  --background: #ffffff;
+}
+
+.card-produto{
+  background-color: rgb(251, 251, 251);
+  padding: 5px 10px;
+  border-radius: 8px;
+  -webkit-box-shadow: -0.5px 0.5px 4px 0px rgba(121, 121, 121, 0.75);
+  -moz-box-shadow: -0.5px 0.5px 4px 0px rgba(121, 121, 121, 0.75);
+  box-shadow: -0.5px 0.5px 4px 0px rgba(121, 121, 121, 0.75);
+}
+
+.img-produto{
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  border-radius: 4px;
+  height: 120px;
+}
+
+.img-produto img{
+  height: 100%;
+}
+
+.titulo{
+  text-align: center;
+  color: #252525;
+  font-weight: bold;
+  font-family: 'SansBold';
+}
+
+.valor{
+  text-align: center;
+  color: #252525;
+  font-family: 'SansBold';
+}
+
+.detalhe{
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'SansBold';
+}
+
+.botao-detalhes{
+  padding: 6px 12px;
+  background-color: var(--vermelho);
+  color: var(--branco);
+  width: 100px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.linha{
+  background-color:black;
+  width: 100%;
+  height: 3px;
+  margin-top: 2px;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+    font-family: Inter;
+}
+
+.nome_produto {
+    color: black;
+    font-family: Inter;
+    font-size: 18px;
+}
+
+.preco {
+    color: black;
+    font-family: Inter;
+    font-size: 16px;
+}
+
+.situacao {
+    color: rgb(0, 253, 42);
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.botoes {
+    margin-top:50%;
+}
+
+.comprando {
+    --background: #000000;
+    font-family: Inter;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.pagar {
+    --background: #20d129;
+    font-family: Inter;
+    font-size: 16px;
+}
+
+.menu{
+  color:#3a3a3a;
+  font-family: Inter;
+  font-size: 22px;
+}
+
+ion-avatar {
+  margin: 0 auto;
+  height: 120px;
+  width: 100px;
+  padding-top: 20px;
+}
+
+.nome {
+  color: #000000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 22px;
+}
+
+.avatar {
+  background-color: #d9d9d9;
+}
+
+.cor {
+  background-color: #d9d9d9;
+  height: 200px;
+}
+
+.conteudo {
+  background: #e6e6e6;
+}

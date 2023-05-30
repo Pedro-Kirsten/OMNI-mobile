@@ -7,6 +7,20 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  public gerente= {
+    cnpj: '',
+    senha: ''
+  }
+
+  public cadastro = {
+    nome: '',
+    sobrenome: '',
+    sexo: '',
+    cpf: '',
+    senha: ''
+  }
+
+
   constructor() {}
 
 }
