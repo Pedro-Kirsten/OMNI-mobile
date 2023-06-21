@@ -7,7 +7,7 @@
       </ion-col>
 
       <div class="logo">
-        <ion-col size= "9" class="ion-align-items-center">
+        <ion-col size="9" class="ion-align-items-center">
           <img src="assets/img/icone.png" width="150px" height="50px" class="logo">
         </ion-col>
       </div>
@@ -25,21 +25,38 @@
         <ion-row class="align-items-center">
           <ion-col>
 
-            <ion-avatar>
-              <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg">
-            </ion-avatar>
-
           </ion-col>
         </ion-row>
-  
+
         <ion-row>
           <ion-col>
 
-            <br>
-           <ion-input [(ngModel)]="cadastro.nome_completo" label="Nome Completo" shape="round" labelPlacement="floating" type="text" style="margin-bottom: 5px;"></ion-input> 
-           <ion-input [(ngModel)]="cadastro.cpf" label="CPF" shape="round" labelPlacement="floating" type="text" style="margin-bottom: 5px;"></ion-input>
-           <ion-input [(ngModel)]="cadastro.data_nascimento" label="Data de Nascimento" shape="round" labelPlacement="floating" type="date" style="margin-bottom: 5px;"></ion-input> 
-           <ion-input [(ngModel)]="cadastro.telefone" label="Telefone" shape="round" labelPlacement="floating" type="number" style="margin-bottom: 5px;"></ion-input>
+            <ion-card *ngFor="let pessoa of pessoas; let ix = index">
+              <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg">
+              <ion-card-header>
+                <ion-card-title>{{pessoa.cpf}}</ion-card-title>
+              </ion-card-header>
+
+              <ion-card-content>
+                {{pessoa.cpf}}
+              </ion-card-content>
+              <ion-card-content>
+                {{pessoa.endereco}}
+              </ion-card-content>
+              <ion-card-content>
+                {{pessoa.telefone}}
+              </ion-card-content>
+
+            </ion-card>
+            <!--             <br>
+            <ion-input [(ngModel)]="cadastro.nome_completo" label="Nome Completo" shape="round"
+              labelPlacement="floating" type="text" style="margin-bottom: 5px;"></ion-input>
+            <ion-input [(ngModel)]="cadastro.cpf" label="CPF" shape="round" labelPlacement="floating" type="text"
+              style="margin-bottom: 5px;"></ion-input>
+            <ion-input [(ngModel)]="cadastro.data_nascimento" label="Data de Nascimento" shape="round"
+              labelPlacement="floating" type="date" style="margin-bottom: 5px;"></ion-input>
+            <ion-input [(ngModel)]="cadastro.telefone" label="Telefone" shape="round" labelPlacement="floating"
+              type="number" style="margin-bottom: 5px;"></ion-input>
 
             <ion-row>
               <ion-col>
@@ -47,19 +64,26 @@
               </ion-col>
             </ion-row>
 
-           <ion-input [(ngModel)]="cadastro.cidade" label="Cidade" shape="round" labelPlacement="floating" type="text" style="margin-bottom: 5px;"></ion-input> 
-           <ion-input [(ngModel)]="cadastro.cep" label="CEP" shape="round" labelPlacement="floating" type="text" style="margin-bottom: 5px;"></ion-input>
-           
-           <ion-input [(ngModel)]="cadastro.rua" label="Rua" shape="round" labelPlacement="floating" type="text" style="margin-bottom: 5px;"></ion-input>
-           <ion-input [(ngModel)]="cadastro.numero" label="Nº" shape="round" labelPlacement="floating" type="text" style="margin-bottom: 5px;"></ion-input>
-           
-          
-         <ion-button size="6" class="cancelar" shape="round" color="danger"> Cancelar </ion-button>
-           
-         <ion-button size="6" class="salvar" shape="round"> Salvar </ion-button>
+            <ion-input [(ngModel)]="cadastro.cidade" label="Cidade" shape="round" labelPlacement="floating" type="text"
+              style="margin-bottom: 5px;"></ion-input>
+            <ion-input [(ngModel)]="cadastro.cep" label="CEP" shape="round" labelPlacement="floating" type="text"
+              style="margin-bottom: 5px;"></ion-input>
 
-           </ion-col>
-         </ion-row>
+            <ion-input [(ngModel)]="cadastro.rua" label="Rua" shape="round" labelPlacement="floating" type="text"
+              style="margin-bottom: 5px;"></ion-input>
+            <ion-input [(ngModel)]="cadastro.numero" label="Nº" shape="round" labelPlacement="floating" type="text"
+              style="margin-bottom: 5px;"></ion-input> -->
+
+
+            <ion-buttons>
+              <ion-button size="6" class="cancelar" shape="round" color="danger"> Cancelar </ion-button>
+
+              <ion-button size="6" class="salvar" shape="round"> Salvar </ion-button>
+            </ion-buttons>
+
+
+          </ion-col>
+        </ion-row>
       </ion-grid>
     </ion-row>
   </ion-grid>

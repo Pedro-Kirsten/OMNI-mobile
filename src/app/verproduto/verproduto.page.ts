@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-verproduto',
@@ -8,24 +9,25 @@ import { ActivatedRoute } from "@angular/router";
 })
 export class VerprodutoPage {
 
-  public pathImgs   = '../../assets/img/';
   public quantidade = 0;
   
-  public produto = {
-    codigo      : 0, 
-    categoria   : 0, 
-    descricao   : '', 
-    nome        : 'abc',
-    valor       : 0.00, 
-    imagens     : [], 
-    visibled    : false
-  }
+  public produto: any;
 
-  constructor(private route: ActivatedRoute) {
+  public pathImgs = '../../assets/';
+
+  constructor(private route: ActivatedRoute, private navCtrl: NavController) {
     this.route.queryParams.subscribe(params => {
       this.produto = params['produto'];
     });
    }
+
+   public goPagamento(produto: any) {
+    this.navCtrl.navigateForward('pagamento', {
+      queryParams: { produto: produto }
+    }); 
+  } 
+
+
 
   public formataValor(valor: number) {
     let retorno = "";
@@ -46,5 +48,6 @@ export class VerprodutoPage {
       this.quantidade -= 1;
     }
   }
+  
 
 }

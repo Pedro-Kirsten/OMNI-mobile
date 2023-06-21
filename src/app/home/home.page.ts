@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { TelaprincipalPage } from '../telaprincipal/telaprincipal.page';
 
 @Component({
   selector: 'app-home',
@@ -6,11 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+  
   public cliente = {
     cpf: '',
     senha: ''
   }
+  
+
 
   public cadastro = {
     nome: '',
@@ -20,6 +24,6 @@ export class HomePage {
     senha: ''
   }
 
-  constructor() {}
+  constructor(private navCtrl: NavController) {}
 
 }

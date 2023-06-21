@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../api/http.service';
 
 @Component({
   selector: 'app-perfil',
@@ -7,20 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilPage implements OnInit {
 
-  public cadastro = {
-    nome_completo: '',
-    cpf: '',
-    data_nascimento: '',
-    telefone: '',
-    cidade: '',
-    cep: '',
-    rua: '',
-    numero: ''
-  }
-
-  constructor() { }
+  public pessoas: any;
 
   ngOnInit() {
+    this.http.getPessoas().subscribe((dados: any) => this.pessoas = dados, (erro: any) => console.log(console.log(erro)))
+  }
+  public pathImgs = '../../assets/icon/';
+  selected: any;
+
+  constructor(private http: HttpService) {
+
   }
 
 }

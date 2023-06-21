@@ -17,6 +17,10 @@ ion-content{
   box-shadow: -0.5px 0.5px 4px 0px rgba(121, 121, 121, 0.75);
 }
 
+.alertCustomCss .alert-wrapper {
+  background: #000000 !important;
+}
+
 ion-icon{ 
   height: 60px;
   width: 40px;
@@ -50,6 +54,17 @@ ion-button{
     font-family: Inter;
     font-size: 18px;  
 }
+
+ion-checkbox {
+  --size: 32px;
+  --checkbox-background-checked: #058d00;
+  color: black;
+  font-family: Inter;
+  font-size: 18px;  
+}
+
+
+
 
 .menu{
   color:#3a3a3a;
