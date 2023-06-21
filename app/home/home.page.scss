@@ -1,0 +1,81 @@
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+ion-content {
+  --background: #ffffff url("../../assets/img/shopping.png") no-repeat center center / cover !important;
+}
+
+.botao_gerente{
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Inter !important;
+}
+
+.login-container{
+  border-radius: 10px;
+  opacity:0.9;
+  text-align: center;
+  background-color:#E0EDF0;
+  margin-top: 70%;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 30px 40px 40px 40px;
+}
+
+.logo{
+  vertical-align: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.entrar{
+  font-family: Inter !important;
+}
+
+.senha{
+  padding-left: 110px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-family: Inter !important;
+  text-transform: none;
+}
+
+.cadastro{
+  padding-left: 144px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-family:Inter !important;
+  text-transform: none;
+}
+
+ion-input {
+  --background: #AF9F9F;
+  --color: #ffffff;
+  --placeholder-color: #ffffff;
+  --placeholder-opacity: 0.8;
+  --padding-bottom: 10px;
+  --padding-end: 10px;
+  --padding-start: 10px;
+}

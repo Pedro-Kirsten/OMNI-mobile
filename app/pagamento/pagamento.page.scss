@@ -1,0 +1,84 @@
+ion-toolbar{
+    --background: #ffffff;
+    --color: white;  
+    --min-height: 60px;
+    --font-family: Inter;
+}
+
+ion-content{
+  --background: #ffffff;
+}
+
+.card-produto{
+  background-color: rgb(251, 251, 251);
+  border-radius: 8px;
+  -webkit-box-shadow: -0.5px 0.5px 4px 0px rgba(121, 121, 121, 0.75);
+  -moz-box-shadow: -0.5px 0.5px 4px 0px rgba(121, 121, 121, 0.75);
+  box-shadow: -0.5px 0.5px 4px 0px rgba(121, 121, 121, 0.75);
+}
+
+ion-icon{ 
+  height: 60px;
+  width: 40px;
+}
+
+.linha{
+  background-color:black;
+  width: 100%;
+  height: 3px;
+  margin-top: 3px;
+}
+
+ion-button{
+  text-transform: none;
+}
+
+.botao {
+  margin-left: 50%;
+  font-size: 18px;
+  font-family: Inter;
+}
+
+.ion-padding p {
+    color: black;
+    font-size: 20px;
+    font-family: Inter;
+}
+
+.nome_produto {
+    color: black;
+    font-family: Inter;
+    font-size: 18px;  
+}
+
+.menu{
+  color:#3a3a3a;
+  font-family: Inter;
+  font-size: 22px;
+}
+
+ion-avatar {
+  margin: auto;
+  height: 125px;
+  width: 125px;
+}
+
+.nome {
+  color: #000000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 22px;
+}
+
+.avatar {
+  background-color: #d9d9d9;
+}
+
+.cor {
+  background-color: #d9d9d9;
+  height: 200px;
+}
+
+.conteudo {
+  background: #e6e6e6;
+}
